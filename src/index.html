@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="json/lang_en.json"></script>
+        <script type="text/javascript" src="json/lang_fr.json"></script>
+        <script type="text/javascript" src="js/switch_lang.js" defer></script>
+        <title id='pgTitle'>Julien Pilleux Website</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom">
+            <a id="navName" class="navbar-brand" href="#">Julien Pilleux</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-nav">
+                    <button id="enBtn" class="btn btn-link">en</button>
+                </li>
+                <li>
+                    <button id="frBtn" class="btn btn-link">fr</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron bg-dark">
+                        <div class="container">
+                            <div class="row">
+                                <!-- SHOWN EN -->
+                                <div id="jbNameEn" class="col-8">
+                                    <h1 class="text-right jb-name">Julien
+                                        Pilleux</h1>
+                                    <p class="jb-txt white-font"> Student in
+                                        computer science @ <a href="https://www.univ-bordeaux.fr/">Université
+                                            de Bordeaux</a></p>
+                                </div>
+
+                                <!-- HIDDEN FR-->
+                                <div id="jbNameFr" class="col-8 hidden">
+                                    <h1 class="text-right jb-name">Julien
+                                        Pilleux</h1>
+                                    <p class="jb-txt white-font"> Etudiant en
+                                        informatique @ <a href="https://www.univ-bordeaux.fr/">Université
+                                            de Bordeaux</a></p>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-thumbnail logo_format" src="images/logo.png"
+                                        alt="univ_logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card border border-dark">
+                        <div class="card-header cat-name bg-dark title-font">
+                            <img class="img icon-format" src="images/contact.png">
+                            Contact
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <a><img class="icon-format" src="images/mobile.png"
+                                        alt="mobile"></a><a class="txt-bold">Phone
+                                    :</a> 33+ 6 32 25 72 93<br>
+                                <a><img class="icon-format" src="images/at.png"
+                                        alt="email"></a><a class="txt-bold">E-mail
+                                    :</a> julien.pilleux at
+                                etu.u-bordeaux.fr<br>
+                                <a><img class="icon-format" src="images/git.png"
+                                        alt="git"></a><a class="txt-bold">Github
+                                    :</a> <a href="https://github.com/probakilla">probakilla</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                    <div id="bioEn" class="card border border-dark">
+                        <!-- HEADER BIO EN SHOWN -->
+                        <div id="headerBioEn" class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/book.png"
+                                    alt="book"></a> Shot Biography
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                I got an advanced degree in computer science in
+                                2016, and I am currently in second year of a
+                                master degree at <a href="https://www.univ-bordeaux.fr/">Université
+                                    de Bordeaux</a>, specialized in software
+                                engineering.
+                            </p>
+                            <p>
+                                I've made a two months internship at <a href="https://www.labri.fr/">LaBRI</a>
+                                with the image and sound team, where i worked
+                                on an anamorphosis software.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="bioFr" class="card border border-dark hidden">
+                        <!-- HEADER BIO FR HIDDEN -->
+                        <div id="headerBioFr" class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/book.png"
+                                    alt="book"></a>Courte Biographie
+                        </div>
+                        <!-- BODY BIO FR HIDDEN-->
+                        <div id="bodyBioFr" class="card-body">
+                            <p>
+                                J'ai obtenu licence informatique en 2016, et je
+                                suis actuellement en seconde année de master
+                                informatique spécialité génie logiciel à l'<a
+                                    href="https://www.univ-bordeaux.fr/">Université
+                                    de Bordeaux</a>
+                            </p>
+                            <p>
+                                J'ai effectué un stage de deux mois au <a href="https://www.labri.fr/">LaBRI</a>
+                                avec
+                                l'équipe image et son, où j'ai travaillé sur un
+                                logiciel d'anamorphose d'une image 2D.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-6">
+                    <div id="skillEn" class="card border border-dark">
+                        <div id="headerCompEn" class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/src.png"
+                                    alt="book"></a>Skills
+                        </div>
+                        <!-- BODY COMP EN -->
+                        <div id="bodyCompEn" class="card-body">
+                            <p>
+                                <a class="txt-bold">Programmation :</a> C/C++,
+                                Java, Python, Bash scripting,
+                                html/css/javascript, LaTeX.
+                            </p>
+                            <p>
+                                <a class="txt-bold">Softwares :</a> Visual
+                                Sudio
+                                Code, Eclipse, NetBeans, Windows, Linux
+                                (Debian/Ubuntu), Gimp.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="skillFr" class="card border border-dark hidden">
+                        <div id="headerCompFr" class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/src.png"
+                                    alt="book"></a>Compétences
+                        </div>
+                        <!-- BODY COMP FR -->
+                        <div id="bodyCompFr" class="card-body">
+                            <p>
+                                <a class="txt-bold">Programmation :</a> C/C++,
+                                Java, Python, Bash scripting,
+                                html/css/javascript, LaTeX.
+                            </p>
+                            <p>
+                                <a class="txt-bold">Logiciels :</a> Visual
+                                Sudio Code, Eclipse, NetBeans, Windows, Linux
+                                (Debian/Ubuntu), Gimp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <!-- HOBBIES EN -->
+                    <div id="hobbiesEn" class="card border border-dark">
+                        <div class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/screen.png"
+                                    alt="hobbies"></a>About me
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                One of my main hobbies is programmation, I've
+                                begun a project of a role playing game in c++ /
+                                Unity with a friend. I also like to experiment
+                                with technology like raspberrypi in which I set
+                                up a <a href="https://www.teamspeak.com/en/">TeamSpeak3</a>
+                                server and a private git server. I often spend
+                                time to code scripts in order to help me in
+                                everyday life.
+                            </p>
+                            <p>
+                                I like to read mangas (mainly One Piece
+                                and Berserk) and heroic fantasy novels. I play
+                                online competitive video games with friends. I
+                                also really enjoy music in general, and I
+                                sometime experiment computer assisted music and
+                                basic video editing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- HOBBIES FR -->
+                    <div id="hobbiesFr" class="card border border-dark hidden">
+                        <div class="card-header cat-name bg-dark">
+                            <a><img class="icon-format" src="images/screen.png"
+                                    alt="hobbies"></a>A propos
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Ma principale occupation est la programmation,
+                                j'ai commencé le projet d'un jeu de rôle en c++
+                                / Unity avec un ami. J'aime aussi expérimenter
+                                avec la technologie, comme par exemple les
+                                raspberrypi sur la quelle j'ai installé un
+                                serveur de communication vocale <a href="https://www.teamspeak.com/en/">TeamSpeak3</a>
+                                et un server git privé. Je code souvent des
+                                scripts dans le but de la vie de tout les
+                                jours.
+                            </p>
+                            <p>
+                                Je lis aussi des mangas (principalement One
+                                Piece et Berserk) et des romans d'héroique
+                                fantaisie. J'aime jouer à des jeux compétitifs
+                                en ligne et j'apprécie aussi beaucoup la
+                                musique, j'expérimente parfois la MAO et /
+                                ou le montage vidéo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>
