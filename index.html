@@ -4,7 +4,19 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="json/lang_en.json"></script>
         <script type="text/javascript" src="json/lang_fr.json"></script>
@@ -12,10 +24,26 @@
         <title id='pgTitle'>Julien Pilleux Website</title>
     </head>
 
-    <body>
-
+    <body id='home-page'>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom">
             <a id="navName" class="navbar-brand" href="#">Julien Pilleux</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Projets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="blackjack/blackjack.html">BlackJack</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-nav">
                     <button id="enBtn" class="btn btn-link">en</button>
@@ -104,8 +132,8 @@
                                 on an anamorphosis software.
                             </p>
                             <p>
-                            <p> For a .pdf version of my CV click<a
-                            href="cv_julien_pilleux.pdf" download> here</a> (french only)</p>
+                                <p> For a .pdf version of my CV click<a href="cv_julien_pilleux.pdf"
+                                        download> here</a> (french only)</p>
                             </p>
                         </div>
                     </div>
@@ -119,7 +147,8 @@
                         <!-- BODY BIO FR HIDDEN-->
                         <div id="bodyBioFr" class="card-body">
                             <p>
-                                J'ai obtenu ma licence informatique en 2016, et je
+                                J'ai obtenu ma licence informatique en 2016, et
+                                je
                                 suis actuellement en seconde année de master
                                 informatique spécialité génie logiciel à l'<a
                                     href="https://www.univ-bordeaux.fr/">Université
@@ -131,8 +160,8 @@
                                 l'équipe image et son, où j'ai travaillé sur un
                                 logiciel d'anamorphose d'une image 2D.
                             </p>
-                            <p> Pour une version .pdf de mon CV cliquez<a
-                            href="cv_julien_pilleux.pdf" download> ici</a> (français uniquement)</p>
+                            <p> Pour une version .pdf de mon CV cliquez<a href="cv_julien_pilleux.pdf"
+                                    download> ici</a> (français uniquement)</p>
                         </div>
                     </div>
                 </div>
@@ -160,10 +189,10 @@
                                 Code, Eclipse, NetBeans, Windows, Linux
                                 (Debian/Ubuntu), Gimp.
                             </p>
-				<p>
-				<a class="txt-bold">Frameworks :</a> Bootstrap 
-				(CSS/Html/JS), Qt (C++ GUI), JavaFX (Java GUI)
-				</p>
+                            <p>
+                                <a class="txt-bold">Frameworks :</a> Bootstrap
+                                (CSS/Html/JS), Qt (C++ GUI), JavaFX (Java GUI)
+                            </p>
                         </div>
                     </div>
                     <div id="skillFr" class="card border border-dark">
@@ -183,10 +212,10 @@
                                 Sudio Code, Eclipse, NetBeans, Windows, Linux
                                 (Debian/Ubuntu), Gimp.
                             </p>
-			<p>
-				<a class="txt-bold">Frameworks :</a> Bootstrap,
-				Qt (C++ GUI), JavaFX (Java GUI)
-			</p>
+                            <p>
+                                <a class="txt-bold">Frameworks :</a> Bootstrap,
+                                Qt (C++ GUI), JavaFX (Java GUI)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -235,7 +264,8 @@
                                 raspberrypi sur la quelle j'ai installé un
                                 serveur de communication vocale <a href="https://www.teamspeak.com/en/">TeamSpeak3</a>
                                 et un server git privé. Je code souvent des
-                                scripts dans le but me simplifier la vie de tout les
+                                scripts dans le but me simplifier la vie de
+                                tout les
                                 jours.
                             </p>
                             <p>

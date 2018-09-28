@@ -3,7 +3,7 @@
     color: #a0a0a0;
 }
 
-body
+#home-page
 {
     background-color: #a0a0a0;
 }
@@ -46,6 +46,12 @@ body
 .hidden
 {
     display: none;
+}
+
+.navbar-blackjack
+{
+    background-color: darkgreen;
+    color: antiquewhite;
 }
 
 #navName
