@@ -76,6 +76,8 @@ $("#btn-toilets").on("click", () => {
   $.getJSON(URL_TOILETS, function(result) {
     let data = JSON.parse(JSON.stringify(result));
     placeMarkToilets(data, bdxMap);
+    let bastien = new Placemark (-0.639310, 44.870670, "SwaggCrappers", "Best crapper in da warudo", "Fuchsia");
+    addPlaceMark(bdxMap, bastien);
   });
 });
 
